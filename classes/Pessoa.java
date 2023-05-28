@@ -1,4 +1,5 @@
-public class _1 {
+package classes;
+public class Pessoa {
     
     protected String nome;
     protected int idade;
@@ -7,6 +8,7 @@ public class _1 {
     protected String numeroCpf;
     protected String nomeMae;
     protected String nomePai;
+
     public String getNome() {
         return nome;
     }
@@ -48,6 +50,12 @@ public class _1 {
     }
     public void setNomePai(String nomePai) {
         this.nomePai = nomePai;
+    }
+    
+    @Override
+    public String toString() {
+        return "Pessoa [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
+                + registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai + "]";
     }
 
     
