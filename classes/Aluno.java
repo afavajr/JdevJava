@@ -35,6 +35,10 @@ public class Aluno extends Pessoa {
         this.disciplinas = disciplinas;
     }*/
 
+    public String msgMaiorIdade() {
+        return this.pessoaMaiorIdade()  ? "Aluno maior de idade" : "Menor de idade";
+    }
+
     
 
     

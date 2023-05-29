@@ -51,12 +51,14 @@ public class Pessoa {
     public void setNomePai(String nomePai) {
         this.nomePai = nomePai;
     }
-    
+
     @Override
     public String toString() {
         return "Pessoa [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
                 + registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai + "]";
     }
 
-    
+    public Boolean pessoaMaiorIdade() {
+        return idade >= 18;
+    }
 }
