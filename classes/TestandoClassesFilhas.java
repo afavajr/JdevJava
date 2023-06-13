@@ -30,9 +30,15 @@ public static void main(String[] args) {
     System.out.println("Salário Diretor é " + diretor.salario());
     System.out.println("Salário Secretário é " + secretario.salario());
 
+    teste(aluno);
+    teste(diretor);
+    teste(secretario);
 
 }
 
+    public static void teste(Pessoa pessoa) {
+        System.out.println("Essa pessoa é " + pessoa.getNome() + " e o salário é " + pessoa.salario());
+    }
     
 
 }
