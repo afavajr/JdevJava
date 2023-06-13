@@ -35,10 +35,10 @@ public class Aluno extends Pessoa {
         this.disciplinas = disciplinas;
     }*/
 
-    @Override
+    /* @Override
     public boolean pessoaMaiorIdade() {
         return idade >= 21;
-    }
+    } */
     
     public String msgMaiorIdade() {
         return this.pessoaMaiorIdade()  ? "Aluno maior de idade" : "Menor de idade";
