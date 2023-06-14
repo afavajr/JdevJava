@@ -1,13 +1,24 @@
 package classes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno extends Pessoa {
 
     private String dataMatricula;
     private String nomeEscola;
     private String serieMatriculada;
-    //private List<disciplina> disciplinas = new ArrayList<disciplinas>();
+
+    private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+
+    }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
 
 
     public String getDataMatricula() {
